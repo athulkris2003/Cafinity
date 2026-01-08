@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cafinity – Artisan Cafe</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fdf1e7;
+        scroll-behavior: smooth;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #f6e2d3 !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        color: #c47a59 !important;
+      }
+
+      .nav-link {
+        color: #6b4b3e !important;
+        margin: 0 10px;
+        font-weight: 500;
+      }
+
+      .btn-primary {
+        background-color: #c47a59;
+        border: none;
+      }
+
+      .btn-outline-primary {
+        border-color: #c47a59;
+        color: #c47a59;
+      }
+
+      .btn-outline-primary:hover {
+        background-color: #c47a59;
+        color: #fff;
+      }
+
+      section {
+        padding: 90px 0;
+      }
+
+      .section-title {
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #4a2e24;
+      }
+
+      #home {
+        background: linear-gradient(135deg, #fce6d8, #f6d1bc);
+      }
+
+      .hero-text h1 span {
+        color: #c47a59;
+      }
+
+      .menu-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        height: 100%;
+      }
+
+      .gallery img {
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .contact_container {
+        text-align: center;
+      }
+
+      footer {
+        background-color: #f6e2d3;
+        color: #6b4b3e;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Cafinity</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#story">Our Story</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 hero-text">
+            <h1 class="display-5 fw-bold">Welcome to <span>Cafinity</span></h1>
+            <p class="lead">A cozy artisan cafe for soulful conversations.</p>
+            <a href="#menu" class="btn btn-primary me-2">View Menu</a>
+            <a href="#contact" class="btn btn-outline-primary">Visit Us</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+              class="img-fluid rounded-4"
+              alt="Coffee"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="bg-light">
+      <div class="container">
+        <h2 class="section-title">Our Story</h2>
+        <p>
+          Born from the love of slow mornings and rich coffee, Cafinity is a
+          sanctuary where time intentionally slows down. We believe that the
+          ritual of a morning brew shouldn't be a rushed transition into the
+          workday, but a celebrated moment of pause. Our space is designed to be
+          an extension of your own living room—a blend of soft lighting, the
+          grounding scent of freshly roasted beans, and an atmosphere that
+          encourages you to linger. Whether you’re finding clarity in a quiet
+          corner or sharing a laugh with an old friend, Cafinity provides the
+          backdrop for those small, vital intervals of peace that define a day
+          well-lived.<br /><br />
+          To honor this philosophy, we treat coffee as a craft rather than a
+          commodity. Every cup is a result of meticulous sourcing and precise
+          brewing, intended to highlight the unique character of the bean. But
+          beyond the premium pours, we are dedicated to fostering meaningful
+          experiences; we don’t just serve coffee, we host the conversations and
+          reflections that happen around it. From the tactile warmth of our
+          handcrafted ceramics to the curated hum of our interiors, every detail
+          is an invitation to disconnect from the digital noise and reconnect
+          with the present moment.
+        </p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Menu</h2>
+
+        <div class="row g-4">
+          <!-- Signature Coffees -->
+          <div class="col-md-4">
+            <div class="menu-card">
+              <h5 class="mb-3">Signature Coffees</h5>
+
+              <ul class="list-unstyled">
+                <li
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <span>Classic Cappuccino</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹180</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+
+                <li
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <span>Hazelnut Latte</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹220</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+
+                <li class="d-flex justify-content-between align-items-center">
+                  <span>Cold Brew</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹200</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Teas & More -->
+          <div class="col-md-4">
+            <div class="menu-card">
+              <h5 class="mb-3">Teas & More</h5>
+
+              <ul class="list-unstyled">
+                <li
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <span>Green Tea</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹120</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+
+                <li
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <span>Masala Chai</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹100</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+
+                <li class="d-flex justify-content-between align-items-center">
+                  <span>Hot Chocolate</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹160</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fresh Bakes -->
+          <div class="col-md-4">
+            <div class="menu-card">
+              <h5 class="mb-3">Fresh Bakes</h5>
+
+              <ul class="list-unstyled">
+                <li
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <span>Butter Croissants</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹150</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+
+                <li
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <span>Chocolate Cookies</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹130</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+
+                <li class="d-flex justify-content-between align-items-center">
+                  <span>Seasonal Muffins</span>
+                  <div>
+                    <span class="fw-semibold me-2">₹170</span>
+                    <button class="btn btn-sm btn-primary">Order</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="bg-light py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Gallery</h2>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-md-4">
+            <div class="row g-4 h-100">
+              <div class="col-12 h-50">
+                <img
+                  src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+                  class="img-fluid w-100 h-100 rounded-4 object-fit-cover"
+                  alt="Coffee cup"
+                />
+              </div>
+
+              <div class="col-12 h-50">
+                <img
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+                  class="img-fluid w-100 h-100 rounded-4 object-fit-cover"
+                  alt="Coffee beans"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- MIDDLE BIG IMAGE -->
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+              class="img-fluid w-100 h-100 rounded-4 object-fit-cover"
+              alt="Cafe interior"
+            />
+          </div>
+
+          <!-- RIGHT BIG IMAGE -->
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+              class="img-fluid w-100 h-100 rounded-4 object-fit-cover"
+              alt="Latte art"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" style="background-color: #f6e2d3">
+      <div class="container">
+        <h2 class="section-title text-center">Leave a Review</h2>
+        <p class="text-center mb-4">
+          We’d love to hear your thoughts about Cafinity ☕
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form class="p-4 bg-white rounded-4 shadow">
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="+91 XXXXX XXXXX"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Your Review</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Share your experience..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Submit Review
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact_container">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: hello@cafinity.com</p>
+        <p>Phone: +91 98XX XXXX10</p>
+      </div>
+    </section>
+
+    <footer class="text-center p-3">© 2026 Cafinity Cafe</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
